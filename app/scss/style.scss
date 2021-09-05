@@ -17,3 +17,7 @@
 @import './components/main';
 @import './components/footer';
 /*======================================================================================*/
+
+body{
+    background-color: $main-bg;
+}
