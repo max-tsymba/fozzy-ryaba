@@ -1,5 +1,51 @@
 /*=====================================TOP SECTION======================================*/
+.top{
+    height: 100vh;
+    @extend %image-bg;
 
+    &__inner{
+        padding-top: 228px;
+        text-align: center;
+    }
+
+    &__wish{
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    &__button{
+        @extend %button-reg;
+        font-family: "Roboto";
+        text-transform: uppercase;
+        border-radius: 60px;
+    }
+
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        width: 272px;
+        align-items: center;
+        padding-top: 48px;
+        margin: 0 auto;
+
+        &-text{
+            font-family: 'Roboto';
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $black;
+            font-size: 30px;
+            margin-left: 7px;
+        }
+    }
+
+    &__next{
+        display: inline-block;
+        margin-top: 61px;
+       &-img{
+           display: inline-block;
+       }
+    }
+}
 /*======================================================================================*/
 
 
