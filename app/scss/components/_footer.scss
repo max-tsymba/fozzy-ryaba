@@ -7,6 +7,10 @@
         color: #000;
         line-height: 10px;
         padding-bottom: 32px;
+
+        @media only screen and (max-width: 576px) {
+            padding-bottom: 80px;
+        }
     }
 }
 /*======================================================================================*/

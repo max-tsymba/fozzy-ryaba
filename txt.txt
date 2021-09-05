@@ -5,3 +5,121 @@
 /*=========================================MAIN=========================================*/
 
 /*======================================================================================*/
+
+
+
+  // &__gallery{
+    //     padding-top: 114px;
+    //     display: grid;
+    //     grid-template-columns: repeat(4, auto);
+
+    //     @media only screen and (max-width: 576px) {
+    //         padding-top: 41px;
+    //         grid-template-columns: repeat(2, auto);
+    //         justify-content: center;
+    //         grid-gap: 32px 60px;
+    //     }
+
+    //     &-group{
+    //         position: relative; 
+    //         display: inline-block;
+    //         min-width: 154px;
+    //         height: 235px;
+
+    //         img{
+    //             max-width: none;
+    //         }
+
+    //         @media only screen and (max-width: 576px) {
+    //             max-width: 240px;
+    //             height: 250px;
+    //         }
+    //     }
+
+    //     &-item{
+    //         max-width: 330px;
+    //         text-align: center;
+
+    //         &:nth-child(3) {
+    //             .gifts__gallery-name {
+    //                 margin-top: 68px;
+
+    //                 @media only screen and (max-width: 576px) {
+    //                     margin-top: 20px;
+    //                 }
+    //             }
+    //         }
+
+    //         @media only screen and (max-width: 576px) {
+    //             max-width: 240px;
+    //         }
+    //     }
+
+    //     &-name{
+    //         max-width: 230px;
+    //         margin: 0 auto;
+    //         margin-top: 73px;  
+
+    //         @media only screen and (max-width: 576px) {
+    //            margin-top: 24px;
+    //         }
+    //     }
+
+    //     &-count{
+    //         position: absolute;
+    //         top: 154px;
+    //         right: 0;
+
+    //         @media only screen and (max-width: 576px) {
+    //             height: 117px;
+    //             width: 117px;
+    //         }
+    //     }
+
+    // }
+
+
+.gifts__gallery-item{
+
+    &:nth-child(1) {
+        .gifts__gallery-img{
+            @media only screen and (max-width: 576px) {
+                max-width: 240px;
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        .gifts__gallery-img{
+            @media only screen and (max-width: 576px) {
+                max-width: 125px;
+            }
+        }
+    }
+
+    &:nth-child(3) {
+
+        .gifts__gallery-group{
+            width: 240px;
+        }
+    }
+
+    &:nth-child(4) {
+        .gifts__gallery-img{
+            @media only screen and (max-width: 576px) {
+                max-width: 151px;
+            }
+        }
+    }
+}
+
+
+// .little-img{
+//     padding-top: 40px;
+//     margin-right: 20px;
+
+//     @media only screen and (max-width: 576px) {
+//         padding-top: 15px;
+//         margin-right: 0;
+//     }
+// }
