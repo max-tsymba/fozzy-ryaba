@@ -1,6 +1,6 @@
 /*====================================IMPORT CONFIGS====================================*/
 @import './configs/reset';
-@import './configs/config';
+@import './configs/package';
 @import './configs/mixin';
 /*======================================================================================*/
 
@@ -13,7 +13,7 @@
 
 
 /*=====================================IMPORT PARTS=====================================*/
-@import './parts/header';
-@import './parts/main';
-@import './parts/footer';
+@import './components/header';
+@import './components/main';
+@import './components/footer';
 /*======================================================================================*/

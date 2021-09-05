@@ -1,11 +1,22 @@
 /*======================================FONT FACES======================================*/
 @font-face{
-    font-family: '';
+    font-family: 'Roboto';
     src: 
-        url('.woff2') format('woff2'),
-        url('.woff') format('woff'),
-        url('.ttf') format('truetype'),
-        url('.otf') format('opentype');
+        url('../../fonts/Robotobold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 
+        url('../../fonts/ptsansbold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: 
+        url('../../fonts/ptsans.ttf') format('truetype');
     font-weight: 400;
 }
 /*======================================================================================*/

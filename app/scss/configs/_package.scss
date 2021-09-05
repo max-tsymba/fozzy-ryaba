@@ -29,23 +29,31 @@ button{
 }
 
 %title{
-    font-family: serif;
-    font-size: 30px;
-    font-weight: 400;
-    color: #000;
+    font-family: 'Roboto';
+    font-size: 42px;
+    font-weight: 700;
+    color: #2FB6B8;
 }
 
 %text{
-    font-family: serif;
-    font-size: 14px;
+    font-family: 'PT Sans';
+    font-size: 10px;
     font-weight: 400;
     color: #000;
 }
 
-%buttons{
-    @include create-button(14, 100, 20);
+%button-date{
+    @include create-button(33, 350, 22);
     color: #FFFFFF;
-    font-weight: 400;
+    background-color: #2FB6B8;
+    font-weight: 700;
+}
+
+%button-reg{
+    @include create-button(40, 540, 10);
+    color: #FFFFFF;
+    background-color: #D3003C;
+    font-weight: 700;
 }
 /*======================================================================================*/
 
