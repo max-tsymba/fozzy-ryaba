@@ -22,5 +22,13 @@ body{
     max-width: 1144px;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media only screen and (max-width: 576px) {
+        padding: 0 33px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        padding: 0 15px;
+    }
 }
 /*======================================================================================*/
