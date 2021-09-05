@@ -39,6 +39,7 @@
         text-transform: uppercase;
         border-radius: 60px;
         transition: .3s all;
+        outline: none;
 
         &:hover{
             transform: scale(1.05);
@@ -82,12 +83,14 @@
             &:hover{
                 transform: scale(1.05);
             }
+            outline: none;
         }
 
         &-telegram{
             &:hover{
                 transform: scale(1.05);
             }
+            outline: none;
         }
 
         @media only screen and (max-width: 576px) {
@@ -102,6 +105,7 @@
         top: 0px;
         margin-top: 61px;
         transition: .3s all;
+        outline: none;
         &-img{
             display: inline-block;
         }

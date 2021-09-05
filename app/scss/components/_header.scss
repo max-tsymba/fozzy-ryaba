@@ -31,6 +31,7 @@
             &:nth-child(3) {
                 margin-left: 20px;
             }
+            outline: none;
         }
     }
 
@@ -44,6 +45,7 @@
             font-family: 'Roboto';
             margin-right: 46px;
             transition: .3s all;
+            outline: none;
             
             &:hover{
                 background-color: #2b9a9c;
