@@ -1,5 +1,31 @@
 /*=========================================MAIN=========================================*/
+.header{
 
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 82px;
+    }
+
+    &__logos{
+        width: 547px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: flex-start;
+        width: 440px;
+        justify-content: space-between;
+
+        &-btn{
+            @extend %button-date;
+            border-radius: 60px;
+            font-family: 'Roboto';
+        }
+    }
+}
 /*======================================================================================*/
 
 
