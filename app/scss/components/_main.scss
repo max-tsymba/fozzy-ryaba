@@ -118,6 +118,69 @@
 /*======================================================================================*/
 
 
-/*========================================SLIDER========================================*/
+/*====================================GIFTS SECTION=====================================*/
+.gifts{
 
+    &__inner{
+        padding-top: 87px;
+        padding-bottom: 84px;
+    }
+
+    &__title{
+        @extend %title;
+        text-transform: uppercase;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 20px 10px;
+        text-align: center;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    &__gallery{
+        padding-top: 114px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+        &-group{
+            position: relative; 
+            display: inline-block;
+            min-width: 154px;
+            height: 235px;
+
+            img{
+                max-width: none;
+            }
+        }
+
+        &-item{
+            max-width: 330px;
+            text-align: center;
+            &:nth-child(3) {
+                .gifts__gallery-name {
+                    margin-top: 68px;
+                }
+            }
+        }
+
+        &-name{
+            max-width: 230px;
+            margin: 0 auto;
+            margin-top: 73px;  
+        }
+
+        &-count{
+            position: absolute;
+            top: 154px;
+            right: 0;
+        }
+
+    }
+}
+
+.little-img{
+    padding-top: 40px;
+    margin-right: 20px;
+}
 /*======================================================================================*/
