@@ -188,7 +188,7 @@ img{
 }
 
 .overlay.opened{
-    z-index: 1;
+    z-index: 20;
     opacity: 1;
 
     .modal{
