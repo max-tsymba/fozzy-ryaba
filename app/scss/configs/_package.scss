@@ -402,6 +402,11 @@ input {
     display: none;
 }
 
+
+.loader.active {
+    display: block;
+}
+
 .circularG {
     position: absolute;
     width: 8px;
