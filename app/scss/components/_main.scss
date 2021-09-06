@@ -54,10 +54,11 @@
 
         &:hover{
             transform: scale(1.05);
+            box-shadow: 0px 0px 5px rgb(63, 63, 63);
         }
 
         &:active{
-            transform: scale(0.95);
+            transform: scale(1);
         }
 
         @media only screen and (max-width: 576px) {
@@ -95,17 +96,33 @@
         }
 
         &-viber{
+            transition: .3s all;
             &:hover{
                 transform: scale(1.05);
             }
             outline: none;
+
+            &_img{
+                transition: .3s all;
+                &:hover{
+                    filter: drop-shadow(0 0 5px rgb(107, 107, 107));
+                }
+            }
         }
 
         &-telegram{
+            transition: .3s all;
             &:hover{
                 transform: scale(1.05);
             }
             outline: none;
+
+            &_img{
+                transition: .3s all;
+                &:hover{
+                    filter: drop-shadow(0 0 5px rgb(107, 107, 107));
+                }
+            }
         }
 
         @media only screen and (max-width: 576px) {
@@ -142,10 +159,6 @@
     padding-bottom: 84px;
     margin-bottom: -80px;
 
-    @media only screen and (min-width: 577px) {
-        min-height: 100vh;
-    }
-
     &__inner{
         padding-top: 87px;
         padding-bottom: 84px;
@@ -172,7 +185,7 @@
             padding: 15px 10px;
         }
 
-        @media only screen and (min-width: 280px) and (max-width: 576px) {
+        @media only screen and (min-width: 280px) and (max-width: 540px) {
             font-size: 24px;
         }
     }
@@ -231,6 +244,14 @@
 
             @media only screen and (max-width: 576px) {
                 padding-top: 20px;
+            }
+        }
+
+        &-img{
+            transition: .3s all;
+
+            &:hover{
+                transform: scale(1.05);
             }
         }
     }
