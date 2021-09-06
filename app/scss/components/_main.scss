@@ -1,12 +1,19 @@
 /*=====================================TOP SECTION======================================*/
 .top{
-    min-height: 100vh;
     @extend %image-bg;
     background-position: top;
 
-    @media only screen and (max-width: 576px) {
-        background-size: contain;
-        background-position-y: 310px;
+    @media only screen and (min-width: 577px) {
+        min-height: 100vh;
+    }
+
+    @media only screen  and (min-width: 426px) and (max-width: 576px) {
+        background-size: auto;
+        background-position-y: 290px;
+    }
+
+    @media only screen  and (min-width: 280px) and (max-width: 425px) {
+        background-position-y: 150px;
     }
 
     &__inner{
@@ -19,6 +26,10 @@
         @media only screen and (max-width: 576px) {
             padding-top: 206px;
         }
+
+        @media only screen and (max-width: 425px) {
+            padding-top: 170px;
+        }
     }
 
     &__wish{
@@ -29,7 +40,7 @@
             order: 4;
             margin-bottom: 0;
             margin-top: 60px;
-            padding-bottom: 170px;
+            padding-bottom: 258px;
         }
     }
 
@@ -58,7 +69,7 @@
         }
 
         @media only screen and (max-width: 425px) {
-            font-size: 24px;
+            font-size: 20px;
         }
     }
 
@@ -69,6 +80,10 @@
         align-items: center;
         padding-top: 48px;
         margin: 0 auto;
+
+        @media only screen  and (min-width: 280px) and (max-width: 375px) {
+            width: 260px;
+        }
 
         &-text{
             font-family: 'Roboto';
@@ -124,13 +139,20 @@
 
 /*====================================GIFTS SECTION=====================================*/
 .gifts{
-    min-height: 100vh;
     padding-bottom: 84px;
     margin-bottom: -80px;
+
+    @media only screen and (min-width: 577px) {
+        min-height: 100vh;
+    }
 
     &__inner{
         padding-top: 87px;
         padding-bottom: 84px;
+
+        @media only screen  and (min-width: 280px) and (max-width: 576px) {
+            padding-top: 0;
+        }
     }
 
     &__title{
@@ -148,6 +170,10 @@
             max-width: 510px;
             font-size: 35px;
             padding: 15px 10px;
+        }
+
+        @media only screen and (min-width: 280px) and (max-width: 576px) {
+            font-size: 24px;
         }
     }
 
