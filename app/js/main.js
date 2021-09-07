@@ -11,6 +11,9 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 window.onload = () => {
+
+    AOS.init();
+
   $(".phone").mask("380999999999", { placeholder: "380_________" });
 
   //Send form

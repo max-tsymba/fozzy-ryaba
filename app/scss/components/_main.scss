@@ -35,6 +35,7 @@
     &__wish{
         display: inline-block;
         margin-bottom: 30px;
+        animation: animate_pulse 2s ease infinite;
 
         @media only screen and (max-width: 576px) {
             order: 4;
@@ -51,10 +52,11 @@
         border-radius: 60px;
         transition: .3s all;
         outline: none;
+        animation: animate_slogan 2s ease infinite;
 
         &:hover{
             transform: scale(1.05);
-            box-shadow: 0px 0px 5px rgb(63, 63, 63);
+            box-shadow: 0px 0px 15px rgb(53, 53, 53);
         }
 
         &:active{
@@ -140,6 +142,7 @@
         outline: none;
         &-img{
             display: inline-block;
+            animation: MoveUpDown 1s ease-in-out infinite;
         }
 
         &:hover{
@@ -151,6 +154,54 @@
         }
     }
 }
+
+@keyframes animate_pulse {
+    0% {
+        -webkit-transform: rotate(-2deg) scale(1);
+        transform: rotate(-2deg) scale(1);
+    }
+    20% {
+        -webkit-transform: rotate(0deg) scale(1.05);
+        transform: rotate(0deg) scale(1.05);
+    }
+    50% {
+        -webkit-transform: rotate(-2deg) scale(1.05);
+        transform: rotate(-2deg) scale(1.05);
+    }
+    70% {
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+    }
+    to {
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+    }
+}
+
+@keyframes animate_slogan {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(#D3003C, 0.563);
+        box-shadow: 0 0 0 0 rgba(#D3003C, 0.563);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 12px transparent;
+        box-shadow: 0 0 0 12px transparent;
+    }
+    to {
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent;
+    }
+}
+
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 /*======================================================================================*/
 
 
@@ -178,6 +229,11 @@
         max-width: 980px;
         margin: 0 auto;
         box-shadow: 0px 0px 15px #fff;
+        transition: .4s all;
+
+        &:hover{
+            box-shadow: 0px 0px 35px #fff;
+        }
 
         @media only screen and (max-width: 576px) {
             max-width: 510px;
@@ -222,6 +278,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            
+            &:hover{
+                .gifts__gallery-count{
+                    filter: drop-shadow(0px 0px 7px #fff);
+                }
+            }
 
             @media only screen and (max-width: 576px) {
                 height: 256px;
@@ -232,6 +294,7 @@
             position: absolute;
             right: 10px;
             bottom: 0;
+            transition: .3s all;
 
             @media only screen and (max-width: 576px) {
                 height: 117px;
